@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import InfiniteScroll from "../components/InfiniteScroll";
 import Feed from "../components/Feed";
 
@@ -38,7 +38,7 @@ const MainPage = () => {
   return (
     <div>
       <InfiniteScroll fetchMore={fetchMoreData}>
-        {portfolioItems.map((item, index) => (
+        {portfolioItems.map((item) => (
           <Feed key={item.id} {...item} />
         ))}
       </InfiniteScroll>
