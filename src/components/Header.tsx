@@ -26,7 +26,6 @@ const Header = () => {
 
 export default Header;
 const HeaderContainer = styled.header`
-  color: #fff;
   padding: 20px;
 `;
 
@@ -48,7 +47,6 @@ const NavMenuItem = styled.li`
 
 const NavLink = styled.a`
   text-decoration: none;
-  color: #fff;
   &:hover {
     text-decoration: underline;
   }

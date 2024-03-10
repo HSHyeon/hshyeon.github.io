@@ -1,24 +1,20 @@
-import styled from "styled-components";
-
-import Header from "./components/Header";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { PATH } from "./config/constants";
 import MainPage from "./pages/MainPage";
+
+const router = createBrowserRouter([
+  {
+    path: PATH.root,
+    element: <MainPage />,
+  },
+]);
+
 function App() {
   return (
     <>
-      <AppContainer>
-        <Header></Header>
-        <MainPage></MainPage>
-      </AppContainer>
+      <RouterProvider router={router} />
     </>
   );
 }
 
 export default App;
-
-const AppContainer = styled.div`
-  width: 100vw;
-
-  display: block;
-
-  background-color: #333;
-`;

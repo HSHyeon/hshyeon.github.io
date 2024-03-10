@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InfiniteScroll from "../components/InfiniteScroll";
 import Feed from "../components/Feed";
+import Header from "../components/Header";
 
 const MainPage = () => {
   const [portfolioItems, setPortfolioItems] = useState<any[]>([
@@ -12,15 +13,15 @@ const MainPage = () => {
     },
     {
       id: 2,
-      title: "카페인바디",
+      title: "멍뭉",
       description: "",
-      videoId: "VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR",
+      videoId: "E1d7rm-J-3I",
     },
     {
       id: 3,
-      title: "카페인바디",
+      title: "스페이스테이션",
       description: "",
-      videoId: "VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR",
+      videoId: "hQIpURB7SEY",
     },
   ]);
 
@@ -37,6 +38,7 @@ const MainPage = () => {
 
   return (
     <div>
+      <Header />
       <InfiniteScroll fetchMore={fetchMoreData}>
         {portfolioItems.map((item) => (
           <Feed key={item.id} {...item} />

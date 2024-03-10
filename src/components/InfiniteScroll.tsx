@@ -44,7 +44,4 @@ const InfiniteScroll = ({ fetchMore, children }: InfiniteScrollProps) => {
 };
 
 export default InfiniteScroll;
-const ScrollContainer = styled.div`
-  max-height: 80vh; /* 스크롤 영역의 최대 높이를 설정합니다. */
-  overflow-y: scroll; /* 세로 스크롤을 표시합니다. */
-`;
+const ScrollContainer = styled.div``;
