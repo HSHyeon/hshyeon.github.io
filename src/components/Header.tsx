@@ -7,16 +7,13 @@ const Header = () => {
       <nav>
         <NavMenu>
           <NavMenuItem>
-            <NavLink href="#">Home</NavLink>
+            <NavLink href="#Intro">Intro</NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#">About</NavLink>
+            <NavLink href="#About">About</NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#">Portfolio</NavLink>
-          </NavMenuItem>
-          <NavMenuItem>
-            <NavLink href="#">Contact</NavLink>
+            <NavLink href="#Portfolio">Portfolio</NavLink>
           </NavMenuItem>
         </NavMenu>
       </nav>
@@ -27,6 +24,11 @@ const Header = () => {
 export default Header;
 const HeaderContainer = styled.header`
   padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #ffffff1d;
 `;
 
 const Logo = styled.div`
