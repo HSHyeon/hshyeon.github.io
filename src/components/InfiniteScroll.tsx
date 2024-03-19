@@ -1,49 +1,63 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 
 interface InfiniteScrollProps {
-  children: React.ReactNode;
+  children: React.ReactNode; // 이미지 URL 배열
   fetchMore: () => void; // 추가 데이터를 가져오는 함수
 }
 
 const InfiniteScroll = ({ fetchMore, children }: InfiniteScrollProps) => {
-  const sentinelRef = useRef<HTMLDivElement>(null); // 스크롤을 감지할 요소의 ref
+  const [isEndOfContainer, setIsEndOfContainer] = useState<boolean>(false); // 가로 스크롤이 끝에 도달했는지 여부
+  const [prevIsEndOfContainer, setPrevIsEndOfContainer] =
+    useState<boolean>(false); // 이전 가로 스크롤이 끝에 도달했는지 여부
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // 스크롤이 교차되면 fetchMore 함수 호출
-            fetchMore();
-          }
-        });
-      },
-      { threshold: 1 } // 요소가 100% 노출될 때 교차되도록 설정
-    );
+    const handleScroll = () => {
+      const container = containerRef.current;
+      if (container) {
+        const isEndOfContainer =
+          container.scrollLeft + container.clientWidth ===
+          container.scrollWidth;
+        setIsEndOfContainer(isEndOfContainer);
+      }
+    };
 
-    if (sentinelRef.current) {
-      observer.observe(sentinelRef.current); // 요소를 관찰
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener("scroll", handleScroll);
     }
 
     return () => {
-      if (sentinelRef.current) {
-        observer.unobserve(sentinelRef.current); // 컴포넌트가 언마운트될 때 관찰 해제
+      if (container) {
+        container.removeEventListener("scroll", handleScroll);
       }
     };
-  }, [fetchMore]);
+  }, []);
+
+  useEffect(() => {
+    if (isEndOfContainer && !prevIsEndOfContainer) {
+      fetchMore();
+    }
+    setPrevIsEndOfContainer(isEndOfContainer);
+  }, [isEndOfContainer, prevIsEndOfContainer, fetchMore]);
 
   return (
-    <>
-      <ScrollContainer>
-        {children}
-        <div ref={sentinelRef}></div> {/* Intersection Observer의 타겟 요소 */}
-      </ScrollContainer>
-    </>
+    <ScrollContainer ref={containerRef}>
+      <ScrollContent>{children}</ScrollContent>
+      {/* Intersection Observer의 타겟 요소 */}
+    </ScrollContainer>
   );
 };
 
 export default InfiniteScroll;
+
 const ScrollContainer = styled.div`
-  width: 100vw;
+  width: 100%;
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  white-space: nowrap; /* 자식 요소가 가로로 나란히 위치하도록 설정 */
+`;
+
+const ScrollContent = styled.div`
+  display: flex; /* 자식 요소가 가로로 나란히 위치하도록 설정 */
 `;

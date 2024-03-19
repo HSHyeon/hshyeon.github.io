@@ -1,9 +1,4 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
-
-interface HeaderProps {
-  activeAnchor: string; // 활성화된 앵커를 추적하기 위한 상태의 타입
-}
 
 const Header = () => {
   return (
