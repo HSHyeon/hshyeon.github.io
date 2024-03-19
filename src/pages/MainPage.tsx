@@ -11,7 +11,7 @@ const MainPage = () => {
   const [portfolioItems, setPortfolioItems] = useState<any[]>(data);
 
   let options = {
-    anchors: ["Intro", "About", "Portfolio"],
+    anchors: ["Intro", "About", "Works"],
     navigation: false, // use dots navigatio
     delay: 600, // the scroll animation speed
   };
@@ -36,7 +36,6 @@ const MainPage = () => {
         <Section>
           <Intro />
         </Section>
-
         <Section>
           <About />
         </Section>

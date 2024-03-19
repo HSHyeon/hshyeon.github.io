@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import { useState, useEffect } from "react";
+
+interface HeaderProps {
+  activeAnchor: string; // 활성화된 앵커를 추적하기 위한 상태의 타입
+}
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>Logo</Logo>
+      <Logo src="./hshlogo.png" />
       <nav>
         <NavMenu>
           <NavMenuItem>
@@ -13,7 +18,7 @@ const Header = () => {
             <NavLink href="#About">About</NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#Portfolio">Portfolio</NavLink>
+            <NavLink href="#Works">Works</NavLink>
           </NavMenuItem>
         </NavMenu>
       </nav>
@@ -24,16 +29,17 @@ const Header = () => {
 export default Header;
 const HeaderContainer = styled.header`
   padding: 20px;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-between;
   z-index: 100;
-  width: 100%;
-  background-color: #ffffff1d;
+  width: 100vw;
 `;
 
-const Logo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
+const Logo = styled.img`
+  width: 50px;
 `;
 
 const NavMenu = styled.ul`
@@ -48,8 +54,8 @@ const NavMenuItem = styled.li`
 `;
 
 const NavLink = styled.a`
-  text-decoration: none;
+  color: white;
   &:hover {
-    text-decoration: underline;
+    color: gray;
   }
 `;
