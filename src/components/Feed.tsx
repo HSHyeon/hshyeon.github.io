@@ -20,15 +20,13 @@ const Feed = ({ title, description, videoId }: FeedProps) => {
 export default Feed;
 
 const FeedContainer = styled.div`
-  height: 50vh;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  width: 100vw;
+  color: white;
   font-size: 20px;
   display: grid;
   box-sizing: border-box;
-  padding: 20px;
-  gap: 5px;
+  gap: 15px;
+  margin: 10px;
+
   font-weight: 600;
 `;
