@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { RxGithubLogo } from "react-icons/rx";
 
 const Header = () => {
   return (
@@ -15,6 +16,13 @@ const Header = () => {
           <NavMenuItem>
             <NavLink href="#Works">Works</NavLink>
           </NavMenuItem>
+          <NavMenuItem>
+            <NavLink href="https://github.com/HSHyeon">
+              <IconContainer>
+                <RxGithubLogo />
+              </IconContainer>
+            </NavLink>
+          </NavMenuItem>
         </NavMenu>
       </nav>
     </HeaderContainer>
@@ -25,6 +33,7 @@ export default Header;
 const HeaderContainer = styled.header`
   padding: 20px;
   box-sizing: border-box;
+
   position: fixed;
   top: 0;
   display: flex;
@@ -35,6 +44,7 @@ const HeaderContainer = styled.header`
 
 const Logo = styled.img`
   width: 50px;
+  height: 21px;
 `;
 
 const NavMenu = styled.ul`
@@ -45,7 +55,9 @@ const NavMenu = styled.ul`
 
 const NavMenuItem = styled.li`
   display: inline-block;
+
   margin-right: 20px;
+  vertical-align: middle;
 `;
 
 const NavLink = styled.a`
@@ -53,4 +65,8 @@ const NavLink = styled.a`
   &:hover {
     color: gray;
   }
+`;
+const IconContainer = styled.span`
+  font-size: 24px; /* 아이콘 크기 조절 */
+  vertical-align: middle; /* 아이콘을 수직 가운데 정렬 */
 `;
