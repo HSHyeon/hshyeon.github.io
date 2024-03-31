@@ -172,7 +172,7 @@ Error generating stack: `+o.message+`
   &.animate {
     animation: none;
     animation:
-      typing 0.8s steps(20, end) forwards,
+      typing 1s steps(12, end) forwards,
       blink 1s step-end infinite;
   }
 `,$P=()=>Y.jsx(Y.Fragment,{children:Y.jsxs(UP,{children:[Y.jsx(VP,{src:"profile.jpeg"}),Y.jsxs(WP,{children:[Y.jsx(Xg,{children:"다양한 경험을 통해 적응하는 개발자 홍소현입니다"}),Y.jsxs(HP,{children:[Y.jsxs("p",{children:["프로젝트를 통해 꾸준히 성장해나가는"," ",Y.jsx(mi,{children:"주니어 개발자 홍소현"}),"입니다."]}),Y.jsx("p",{children:"소프트웨어 개발 분야에서 지속적인 학습과 개선에 힘쓰고 있습니다."}),Y.jsx("p",{children:"더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,"}),Y.jsxs("p",{children:[Y.jsx(mi,{children:"시각적으로도 매력적"}),"이고"," ",Y.jsx(mi,{children:"기능적인 제품"}),"을 만들며,"," "]}),Y.jsxs("p",{children:["이를 통해",Y.jsx(mi,{children:" 사용자에게 가치 있는 경험"}),"을 주는 것이 목표입니다."]})]}),Y.jsx(Xg,{children:"🌟 Skill&Tools"}),Y.jsxs(BP,{children:[Y.jsx(mi,{children:"FrontEnd"}),Y.jsxs(Gf,{children:[Y.jsx("img",{src:"https://img.shields.io/badge/React-1572B6?style=flat-square&logo=React&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/TypeScript-8A2BE2?style=flat-square&logo=typescript&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"})]}),Y.jsx(mi,{children:"Design"}),Y.jsxs(Gf,{children:[Y.jsx("img",{src:"https://img.shields.io/badge/Figma-0C8CE9?style=flat-square&logo=figma&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat-square&logo=adobe%20illustrator&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat-square&logo=adobe%20photoshop&logoColor=white"})]}),Y.jsx(mi,{children:"Tools"}),Y.jsxs(Gf,{children:[Y.jsx("img",{src:"https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"}),Y.jsx("img",{src:"https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=notion&logoColor=black"})]})]})]})]})}),UP=Xe.div`
@@ -212,6 +212,17 @@ Error generating stack: `+o.message+`
   filter: blur(10000);
   filter: drop-shadow(6px 6px 9px #715987);
   border-radius: 20px;
+  @keyframes imganim {
+    from {
+      transform: translate(-100px, 0px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  animation: imganim 500ms ease-in forwards;
 `;var Fw={},$w={},sc={},Uw={};(function(e){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var t={animating:!1,autoplaying:null,currentDirection:0,currentLeft:null,currentSlide:0,direction:1,dragging:!1,edgeDragged:!1,initialized:!1,lazyLoadedList:[],listHeight:null,listWidth:null,scrolling:!1,slideCount:null,slideHeight:null,slideWidth:null,swipeLeft:null,swiped:!1,swiping:!1,touchObject:{startX:0,startY:0,curX:0,curY:0},trackStyle:{},trackWidth:0,targetSlide:0};e.default=t})(Uw);var QP="Expected a function",Zg=NaN,qP="[object Symbol]",YP=/^\s+|\s+$/g,KP=/^[-+]0x[0-9a-f]+$/i,GP=/^0b[01]+$/i,XP=/^0o[0-7]+$/i,ZP=parseInt,JP=typeof Jl=="object"&&Jl&&Jl.Object===Object&&Jl,e_=typeof self=="object"&&self&&self.Object===Object&&self,t_=JP||e_||Function("return this")(),n_=Object.prototype,r_=n_.toString,i_=Math.max,o_=Math.min,Xf=function(){return t_.Date.now()};function a_(e,t,n){var r,i,o,a,l,u,f=0,d=!1,p=!1,v=!0;if(typeof e!="function")throw new TypeError(QP);t=Jg(t)||0,mp(n)&&(d=!!n.leading,p="maxWait"in n,o=p?i_(Jg(n.maxWait)||0,t):o,v="trailing"in n?!!n.trailing:v);function b(S){var k=r,j=i;return r=i=void 0,f=S,a=e.apply(j,k),a}function E(S){return f=S,l=setTimeout(h,t),d?b(S):a}function x(S){var k=S-u,j=S-f,M=t-k;return p?o_(M,o-j):M}function C(S){var k=S-u,j=S-f;return u===void 0||k>=t||k<0||p&&j>=o}function h(){var S=Xf();if(C(S))return g(S);l=setTimeout(h,x(S))}function g(S){return l=void 0,v&&r?b(S):(r=i=void 0,a)}function y(){l!==void 0&&clearTimeout(l),f=0,r=u=i=l=void 0}function _(){return l===void 0?a:g(Xf())}function L(){var S=Xf(),k=C(S);if(r=arguments,i=this,u=S,k){if(l===void 0)return E(u);if(p)return l=setTimeout(h,t),b(u)}return l===void 0&&(l=setTimeout(h,t)),a}return L.cancel=y,L.flush=_,L}function mp(e){var t=typeof e;return!!e&&(t=="object"||t=="function")}function l_(e){return!!e&&typeof e=="object"}function s_(e){return typeof e=="symbol"||l_(e)&&r_.call(e)==qP}function Jg(e){if(typeof e=="number")return e;if(s_(e))return Zg;if(mp(e)){var t=typeof e.valueOf=="function"?e.valueOf():e;e=mp(t)?t+"":t}if(typeof e!="string")return e===0?e:+e;e=e.replace(YP,"");var n=GP.test(e);return n||XP.test(e)?ZP(e.slice(2),n?2:8):KP.test(e)?Zg:+e}var u_=a_,Hw={exports:{}};/*!
 	Copyright (c) 2018 Jed Watson.
 	Licensed under the MIT License (MIT), see
@@ -223,7 +234,7 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   gap: 10px;
-`,PT=({title:e,description:t,videoId:n,src:r})=>{const[i,o]=X.useState(!1),a=l=>{o(l)};return Y.jsxs(_T,{onMouseEnter:()=>a(!0),onMouseLeave:()=>a(!1),children:[Y.jsx(kT,{src:r}),i&&Y.jsx(TT,{children:Y.jsx(OT,{title:e,description:t,videoId:n})})]})},_T=Xe.div`
+`,PT=({title:e,description:t,videoId:n,src:r})=>{const[i,o]=X.useState(!1),a=l=>{o(l)};return Y.jsxs(_T,{onMouseEnter:()=>a(!0),onMouseLeave:()=>a(!1),children:[Y.jsx(kT,{src:r}),Y.jsx(TT,{className:i?"show":"",children:Y.jsx(OT,{title:e,description:t,videoId:n})})]})},_T=Xe.div`
   text-align: center;
   color: white;
   font-size: 20px;
@@ -250,6 +261,11 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease; // 투명도 변화 애니메이션
+  &.show {
+    opacity: 1;
+  }
 `,LT=[{id:1,title:"카페인바디",src:"works4.png",description:"",videoId:"VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR"},{id:2,title:"멍뭉",src:"works2.png",description:"",videoId:"E1d7rm-J-3I"},{id:3,title:"스페이스테이션",src:"works1.png",description:"",videoId:"hQIpURB7SEY"},{id:4,title:"FoF",src:"works3.png",description:"",videoId:"fFVip-_1OWc"}];function MT(e){return zw({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{id:"Desktop_Mouse_1"},child:[{tag:"path",attr:{d:"M13.435,2.065h-2.87a6.5,6.5,0,0,0-6.5,6.5v6.87a6.5,6.5,0,0,0,6.5,6.5h2.87a6.5,6.5,0,0,0,6.5-6.5V8.565A6.5,6.5,0,0,0,13.435,2.065Zm-8.37,6.5a5.51,5.51,0,0,1,5.5-5.5h.94v6.44H5.065Zm13.87,6.87a5.5,5.5,0,0,1-5.5,5.5h-2.87a5.5,5.5,0,0,1-5.5-5.5v-4.93h13.87Zm0-5.93h-6.43V3.065h.93a5.5,5.5,0,0,1,5.5,5.5Z"},child:[]}]}]})(e)}const RT=()=>{const e={centerMode:!0,centerPadding:"60px",dots:!0,infinite:!0,speed:500,slidesToScroll:1,autoplay:!0};return Y.jsx(Y.Fragment,{children:Y.jsx(jT,{children:Y.jsxs(DT,{children:[Y.jsx(MT,{size:"30",color:"#ffffffc6"}),Y.jsx(Fk,{...e,children:LT.map(t=>Y.jsx("div",{children:Y.jsx(PT,{...t})},t.id))})]})})})},jT=Xe.div`
   background-color: #685c86;
   height: 100vh;
@@ -281,7 +297,7 @@ Error generating stack: `+o.message+`
   color: #7e7e7e;
   display: flex;
   flex-direction: column;
-  background-color: #cdcdcd;
+  background-color: #dcdcdc;
 `,IT=()=>{const[e,t]=X.useState(!1),n=(i,o,a)=>{o.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return Y.jsxs("div",{children:[Y.jsx(LP,{}),Y.jsx(Yg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:({})=>Y.jsxs(Yg.Wrapper,{children:[Y.jsx("div",{className:"section",children:Y.jsx(AP,{animate:e})}),Y.jsx("div",{className:"section",children:Y.jsx($P,{})}),Y.jsx("div",{className:"section",children:Y.jsx(RT,{})}),Y.jsx("div",{className:"section fp-auto-height",children:Y.jsx(AT,{})})]})})]})},zT=uP([{path:SP.root,element:Y.jsx(IT,{})}]);function FT(){return Y.jsx(Y.Fragment,{children:Y.jsx(yP,{router:zT})})}const $T={main:"#35a29f",sub:"#2b2b2b"},UT={maxWidth:768,sm:12,md:16,lg:20},HT={size:UT},BT={colors:$T},WT={...HT,...BT},VT=new KE({defaultOptions:{queries:{retry:1}}});var OS=function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},CS=Fh(Oy||(Oy=OS([`
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
