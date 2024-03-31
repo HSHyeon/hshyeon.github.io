@@ -29,30 +29,30 @@ const TextContainer = styled.div`
   top: 45%;
   align-items: center;
   justify-content: center;
-  display: grid;
-  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
 `;
 
 const FrontEndDeveloper = styled.div`
-  font-size: 30px;
+  font-size: 3.2vw;
 `;
 
-const MainText = styled.div`
-  font-size: 50px;
+const MainText = styled.span`
+  font-size: 4.5vw;
   font-weight: 600;
   border-right: 0.15em solid orange;
   overflow: hidden;
   white-space: nowrap;
   text-align: left;
-  width: 0%;
 
   @keyframes typing {
     from {
-      width: 0%;
+      width: 0;
     }
     to {
-      width: 100%;
+      width: 37.5vw;
     }
   }
 

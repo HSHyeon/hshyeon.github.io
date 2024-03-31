@@ -1,4 +1,4 @@
-import ReactFullpage, { fullpageOptions } from "@fullpage/react-fullpage";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import About from "../components/About";

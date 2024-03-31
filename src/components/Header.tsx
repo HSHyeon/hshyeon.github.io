@@ -3,7 +3,7 @@ import { RxGithubLogo } from "react-icons/rx";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState<string>("");
+  const [activeLink, setActiveLink] = useState<string>("#Intro");
 
   useEffect(() => {
     const handlePopstate = () => {

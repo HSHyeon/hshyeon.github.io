@@ -29,10 +29,33 @@ const About = () => {
               것이 목표입니다.
             </p>
           </TextContainer>
+          <TitleContainer>🌟 Skill&Tools</TitleContainer>
+          <StackContainer>
+            <PointText>FrontEnd</PointText>
+            <IconContainer>
+              <img src="https://img.shields.io/badge/React-1572B6?style=flat-square&logo=React&logoColor=white" />
+              <img src="https://img.shields.io/badge/TypeScript-8A2BE2?style=flat-square&logo=typescript&logoColor=white" />
+              <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" />
+              <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+            </IconContainer>
+            <PointText>Design</PointText>
+            <IconContainer>
+              <img src="https://img.shields.io/badge/Figma-0C8CE9?style=flat-square&logo=figma&logoColor=white" />
+              <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat-square&logo=adobe%20illustrator&logoColor=white" />
+              <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat-square&logo=adobe%20photoshop&logoColor=white" />
+            </IconContainer>
+            <PointText>Version Control</PointText>
+            <IconContainer>
+              <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white" />
+              <img src="https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white" />
+              <img src="https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=notion&logoColor=black" />
+              <img src="https://img.shields.io/badge/GoogleSheets-34A853?style=flat-square&logo=googlesheets&logoColor=white" />
+            </IconContainer>
+          </StackContainer>
         </SubContainer>
       </AboutCatainer>
     </>
-  );
+  ); //추후 뷰 수정하기
 };
 
 export default About;
@@ -48,14 +71,23 @@ const AboutCatainer = styled.div`
 
 const TextContainer = styled.div`
   line-height: 1.5em;
+  margin-bottom: 30px;
+`;
+const StackContainer = styled.div`
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+const IconContainer = styled.div`
+  display: flex;
+  gap: 4px;
 `;
 const SubContainer = styled.div`
-  color: #dedfe7;
+  color: #ffffffbe;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  align-content: space-between;
 `;
 const PointText = styled.span`
   font-weight: 400;
@@ -67,7 +99,7 @@ const TitleContainer = styled.p`
   font-size: x-large;
 `;
 const ImgContainer = styled.img`
-  width: 30vw;
+  width: 28vw;
   filter: grayscale(20%);
   filter: brightness(120%);
   filter: blur(10000);
