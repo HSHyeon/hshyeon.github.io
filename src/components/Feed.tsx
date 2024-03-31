@@ -25,7 +25,7 @@ const FeedContainer = styled.div`
   font-size: 20px;
   display: grid;
   box-sizing: border-box;
-  gap: 15px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 

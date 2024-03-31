@@ -1,24 +1,31 @@
-import ReactFullpage, { fullpageOptions } from "@fullpage/react-fullpage";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import About from "../components/About";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
+import { useState } from "react";
 
-//import { useState } from "react";
-
-interface Section {}
+interface Section {
+  index: number;
+}
 
 type Credits = {
   enabled?: boolean;
   label?: string;
   position?: "left" | "right";
 };
-const pluginWrapper = () => {};
 
 const MainPage = () => {
-  const onLeave = (origin: any, destination: any, direction: any) => {
-    console.log("onLeave", { origin, destination, direction });
+  const [animate, setAnimate] = useState(false);
+
+  const handleAfterLoad = (destination: Section) => {
+    // 첫 번째 섹션이 로드될 때 애니메이션을 시작합니다.
+    if (destination.index === 0) {
+      setAnimate(true);
+    } else {
+      setAnimate(false);
+    }
   };
 
   const credits: Credits = {
@@ -33,11 +40,12 @@ const MainPage = () => {
       <ReactFullpage
         licenseKey={"KNXF6-QO9NI-YH0AI-7I377-OOOYM"}
         credits={credits}
+        afterLoad={handleAfterLoad}
         anchors={["Intro", "About", "Works"]}
-        render={({ fullpageApi }) => (
+        render={({}) => (
           <ReactFullpage.Wrapper>
             <div className="section">
-              <Intro />
+              <Intro animate={animate} />
             </div>
             <div className="section">
               <About />

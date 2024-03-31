@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-const Intro = () => {
+interface IntroProps {
+  animate: boolean; // 애니메이션을 제어하기 위한 prop
+}
+
+const Intro = ({ animate }: IntroProps) => {
   return (
     <IntroContainer>
       <TextContainer>
-        FRONTEND DEVELOPER
-        <MainText>SOHYEON HONG</MainText>
+        <FrontEndDeveloper>FRONTEND DEVELOPER</FrontEndDeveloper>
+        <MainText className={animate ? "animate" : ""}>SOHYEON HONG</MainText>
       </TextContainer>
     </IntroContainer>
   );
@@ -16,7 +20,7 @@ export default Intro;
 const IntroContainer = styled.div`
   background: linear-gradient(45deg, Violet, Orange);
   background-color: #2a1939;
-  height: 100vh; /* 화면 높이의 90%로 설정 */
+  height: 100vh;
 `;
 
 const TextContainer = styled.div`
@@ -26,9 +30,12 @@ const TextContainer = styled.div`
   align-items: center;
   justify-content: center;
   display: grid;
-
   font-size: 30px;
   text-align: center;
+`;
+
+const FrontEndDeveloper = styled.div`
+  font-size: 30px;
 `;
 
 const MainText = styled.div`
@@ -38,13 +45,11 @@ const MainText = styled.div`
   overflow: hidden;
   white-space: nowrap;
   text-align: left;
-  width: 0;
-  animation:
-    typing 0.8s steps(20, end) forwards,
-    blink 1s step-end infinite;
+  width: 0%;
+
   @keyframes typing {
     from {
-      width: 0;
+      width: 0%;
     }
     to {
       width: 100%;
@@ -55,5 +60,11 @@ const MainText = styled.div`
     50% {
       border-color: transparent;
     }
+  }
+
+  &.animate {
+    animation:
+      typing 0.8s steps(20, end) forwards,
+      blink 1s step-end infinite;
   }
 `;
