@@ -2,24 +2,28 @@
   {
     "id": 1,
     "title": "카페인바디",
+    "src": "works4.png",
     "description": "",
     "videoId": "VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR"
   },
   {
     "id": 2,
     "title": "멍뭉",
+    "src": "works2.png",
     "description": "",
     "videoId": "E1d7rm-J-3I"
   },
   {
     "id": 3,
     "title": "스페이스테이션",
+    "src": "works1.png",
     "description": "",
     "videoId": "hQIpURB7SEY"
   },
   {
     "id": 4,
     "title": "FoF",
+    "src": "works3.png",
     "description": "",
     "videoId": "fFVip-_1OWc"
   }

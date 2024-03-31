@@ -44,12 +44,11 @@ const About = () => {
               <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat-square&logo=adobe%20illustrator&logoColor=white" />
               <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat-square&logo=adobe%20photoshop&logoColor=white" />
             </IconContainer>
-            <PointText>Version Control</PointText>
+            <PointText>Tools</PointText>
             <IconContainer>
               <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white" />
               <img src="https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white" />
               <img src="https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=notion&logoColor=black" />
-              <img src="https://img.shields.io/badge/GoogleSheets-34A853?style=flat-square&logo=googlesheets&logoColor=white" />
             </IconContainer>
           </StackContainer>
         </SubContainer>
@@ -61,7 +60,7 @@ const About = () => {
 export default About;
 
 const AboutCatainer = styled.div`
-  background-color: #b9a8c8;
+  background-color: #786d95;
   height: 100vh; /* 화면 높이의 90%로 설정 */
   justify-content: center;
   align-items: center;
@@ -103,6 +102,6 @@ const ImgContainer = styled.img`
   filter: grayscale(20%);
   filter: brightness(120%);
   filter: blur(10000);
-  filter: drop-shadow(6px 6px 9px #9985ab);
+  filter: drop-shadow(6px 6px 9px #715987);
   border-radius: 20px;
 `;
