@@ -23,11 +23,37 @@ const TextContainer = styled.div`
   color: white;
   position: relative;
   top: 45%;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+
   font-size: 30px;
   text-align: center;
 `;
 
-const MainText = styled.p`
+const MainText = styled.div`
   font-size: 50px;
   font-weight: 600;
+  border-right: 0.15em solid violet;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  width: 0;
+  animation:
+    typing 0.8s steps(20, end) forwards,
+    blink 1s step-end infinite;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 `;
