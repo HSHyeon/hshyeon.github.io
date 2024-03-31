@@ -34,7 +34,7 @@ const TextContainer = styled.div`
 const MainText = styled.div`
   font-size: 50px;
   font-weight: 600;
-  border-right: 0.15em solid violet;
+  border-right: 0.15em solid orange;
   overflow: hidden;
   white-space: nowrap;
   text-align: left;

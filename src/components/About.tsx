@@ -4,11 +4,11 @@ const About = () => {
   return (
     <>
       <AboutCatainer>
-        <TitleContainer>
-          다양한 경험을 통해 빠르게 적응하는 개발자 홍소현입니다
-        </TitleContainer>
+        <ImgContainer src="profile.jpg" />
         <SubContainer>
-          <ImgContainer src="profile.jpg" />
+          <TitleContainer>
+            다양한 경험을 통해 적응하는 개발자 홍소현입니다
+          </TitleContainer>
           <TextContainer>
             <p>
               프로젝트를 통해 꾸준히 성장해나가는 주니어 개발자 홍소현입니다.
@@ -39,17 +39,18 @@ const AboutCatainer = styled.div`
   align-items: center;
   gap: 20px;
   display: flex;
-  flex-direction: column;
 `;
 
 const TextContainer = styled.div`
-  margin: 20px;
   line-height: 1.5em;
 `;
 const SubContainer = styled.div`
-  margin: 20px;
   color: white;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  align-content: space-between;
 `;
 const TitleContainer = styled.p`
   color: white;

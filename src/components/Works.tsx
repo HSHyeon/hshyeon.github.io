@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Feed from "../components/Feed";
+import Feed from "./Feed";
 import data from "../data.json";
 import styled from "styled-components";
 
