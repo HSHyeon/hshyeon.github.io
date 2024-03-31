@@ -1,3 +1,3 @@
 /// <reference types="vite/client" />
-declare module "react-fullpage";
+declare module "fullpage.js";
 declare module "react-slick";
