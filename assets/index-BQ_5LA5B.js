@@ -170,6 +170,7 @@ Error generating stack: `+o.message+`
   }
 
   &.animate {
+    animation: none;
     animation:
       typing 0.8s steps(20, end) forwards,
       blink 1s step-end infinite;
@@ -254,7 +255,7 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   background-color: #cdcdcd;
-`,LT=()=>{const[e,t]=G.useState(!1),n=i=>{i.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return ne.jsxs("div",{children:[ne.jsx(kC,{}),ne.jsx(qg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:({})=>ne.jsxs(qg.Wrapper,{children:[ne.jsx("div",{className:"section",children:ne.jsx(jC,{animate:e})}),ne.jsx("div",{className:"section",children:ne.jsx(zC,{})}),ne.jsx("div",{className:"section",children:ne.jsx(PT,{})}),ne.jsx("div",{className:"section fp-auto-height",children:ne.jsx(kT,{})})]})})]})},MT=aC([{path:gC.root,element:ne.jsx(LT,{})}]);function RT(){return ne.jsx(ne.Fragment,{children:ne.jsx(vC,{router:MT})})}const jT={main:"#35a29f",sub:"#2b2b2b"},DT={maxWidth:768,sm:12,md:16,lg:20},AT={size:DT},NT={colors:jT},IT={...AT,...NT},zT=new Qx({defaultOptions:{queries:{retry:1}}});var bS=function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},ES=zh(Ey||(Ey=bS([`
+`,LT=()=>{const[e,t]=G.useState(!1),n=(i,o,a)=>{o.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return ne.jsxs("div",{children:[ne.jsx(kC,{}),ne.jsx(qg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:({})=>ne.jsxs(qg.Wrapper,{children:[ne.jsx("div",{className:"section",children:ne.jsx(jC,{animate:e})}),ne.jsx("div",{className:"section",children:ne.jsx(zC,{})}),ne.jsx("div",{className:"section",children:ne.jsx(PT,{})}),ne.jsx("div",{className:"section fp-auto-height",children:ne.jsx(kT,{})})]})})]})},MT=aC([{path:gC.root,element:ne.jsx(LT,{})}]);function RT(){return ne.jsx(ne.Fragment,{children:ne.jsx(vC,{router:MT})})}const jT={main:"#35a29f",sub:"#2b2b2b"},DT={maxWidth:768,sm:12,md:16,lg:20},AT={size:DT},NT={colors:jT},IT={...AT,...NT},zT=new Qx({defaultOptions:{queries:{retry:1}}});var bS=function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},ES=zh(Ey||(Ey=bS([`
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
