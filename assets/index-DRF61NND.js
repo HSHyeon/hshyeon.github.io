@@ -174,7 +174,7 @@ Error generating stack: `+o.message+`
       typing 0.8s steps(20, end) forwards,
       blink 1s step-end infinite;
   }
-`,zC=()=>ne.jsx(ne.Fragment,{children:ne.jsxs(FC,{children:[ne.jsx(BC,{src:"profile.jpg"}),ne.jsxs(UC,{children:[ne.jsx(HC,{children:"다양한 경험을 통해 적응하는 개발자 홍소현입니다"}),ne.jsxs($C,{children:[ne.jsxs("p",{children:["프로젝트를 통해 꾸준히 성장해나가는"," ",ne.jsx(Ss,{children:"주니어 개발자 홍소현"}),"입니다."]}),ne.jsx("p",{children:"소프트웨어 개발 분야에서 지속적인 학습과 개선에 힘쓰고 있습니다."}),ne.jsx("p",{children:"더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,"}),ne.jsxs("p",{children:[ne.jsx(Ss,{children:"시각적으로도 매력적"}),"이고"," ",ne.jsx(Ss,{children:"기능적인 제품"}),"을 만들며,"," "]}),ne.jsxs("p",{children:["이를 통해",ne.jsx(Ss,{children:" 사용자에게 가치 있는 경험"}),"을 주는 것이 목표입니다."]})]})]})]})}),FC=wt.div`
+`,zC=()=>ne.jsx(ne.Fragment,{children:ne.jsxs(FC,{children:[ne.jsx(BC,{src:"profile.jpeg"}),ne.jsxs(UC,{children:[ne.jsx(HC,{children:"다양한 경험을 통해 적응하는 개발자 홍소현입니다"}),ne.jsxs($C,{children:[ne.jsxs("p",{children:["프로젝트를 통해 꾸준히 성장해나가는"," ",ne.jsx(Ss,{children:"주니어 개발자 홍소현"}),"입니다."]}),ne.jsx("p",{children:"소프트웨어 개발 분야에서 지속적인 학습과 개선에 힘쓰고 있습니다."}),ne.jsx("p",{children:"더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,"}),ne.jsxs("p",{children:[ne.jsx(Ss,{children:"시각적으로도 매력적"}),"이고"," ",ne.jsx(Ss,{children:"기능적인 제품"}),"을 만들며,"," "]}),ne.jsxs("p",{children:["이를 통해",ne.jsx(Ss,{children:" 사용자에게 가치 있는 경험"}),"을 주는 것이 목표입니다."]})]})]})]})}),FC=wt.div`
   background-color: #b9a8c8;
   height: 100vh; /* 화면 높이의 90%로 설정 */
   justify-content: center;
@@ -253,7 +253,7 @@ Error generating stack: `+o.message+`
   color: #7e7e7e;
   display: flex;
   flex-direction: column;
-  background-color: #bbbbbb;
+  background-color: #cdcdcd;
 `,LT=()=>{const[e,t]=G.useState(!1),n=i=>{i.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return ne.jsxs("div",{children:[ne.jsx(kC,{}),ne.jsx(qg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:({})=>ne.jsxs(qg.Wrapper,{children:[ne.jsx("div",{className:"section",children:ne.jsx(jC,{animate:e})}),ne.jsx("div",{className:"section",children:ne.jsx(zC,{})}),ne.jsx("div",{className:"section",children:ne.jsx(PT,{})}),ne.jsx("div",{className:"section fp-auto-height",children:ne.jsx(kT,{})})]})})]})},MT=aC([{path:gC.root,element:ne.jsx(LT,{})}]);function RT(){return ne.jsx(ne.Fragment,{children:ne.jsx(vC,{router:MT})})}const jT={main:"#35a29f",sub:"#2b2b2b"},DT={maxWidth:768,sm:12,md:16,lg:20},AT={size:DT},NT={colors:jT},IT={...AT,...NT},zT=new Qx({defaultOptions:{queries:{retry:1}}});var bS=function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},ES=zh(Ey||(Ey=bS([`
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
