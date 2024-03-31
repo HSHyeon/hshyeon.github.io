@@ -1,4 +1,4 @@
-import ReactFullpage from "@fullpage/react-fullpage";
+import ReactFullpage, { fullpageOptions } from "@fullpage/react-fullpage";
 import Header from "../components/Header";
 import Intro from "../components/Intro";
 import About from "../components/About";
@@ -19,7 +19,11 @@ type Credits = {
 const MainPage = () => {
   const [animate, setAnimate] = useState(false);
 
-  const handleAfterLoad = (destination: Section) => {
+  const handleAfterLoad = (
+    _origin: any,
+    destination: Section,
+    _direction: any
+  ) => {
     // 첫 번째 섹션이 로드될 때 애니메이션을 시작합니다.
     if (destination.index === 0) {
       setAnimate(true);
