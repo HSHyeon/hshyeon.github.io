@@ -16,7 +16,7 @@ const ContactContainer = styled.div`
   color: #7e7e7e;
   display: flex;
   flex-direction: column;
-  background-color: #bbbbbb;
+  background-color: #cdcdcd;
 `;
 
 export default Contact;
