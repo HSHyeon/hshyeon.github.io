@@ -104,4 +104,15 @@ const ImgContainer = styled.img`
   filter: blur(10000);
   filter: drop-shadow(6px 6px 9px #715987);
   border-radius: 20px;
+  @keyframes imganim {
+    from {
+      transform: translate(-100px, 0px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  animation: imganim 500ms ease-in forwards;
 `;

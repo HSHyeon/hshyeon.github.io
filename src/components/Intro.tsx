@@ -65,7 +65,7 @@ const MainText = styled.span`
   &.animate {
     animation: none;
     animation:
-      typing 0.8s steps(20, end) forwards,
+      typing 1s steps(12, end) forwards,
       blink 1s step-end infinite;
   }
 `;

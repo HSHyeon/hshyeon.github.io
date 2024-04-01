@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-import YouTube from "react-youtube";
 import Youtube from "./Youtube";
 
 interface FeedProps {
@@ -10,7 +9,7 @@ interface FeedProps {
   src: string;
 }
 
-const Feed: React.FC<FeedProps> = ({ title, description, videoId, src }) => {
+const Feed = ({ title, description, videoId, src }: FeedProps) => {
   const [hovered, setHovered] = useState(false);
 
   const handleHover = (isHovered: boolean) => {
@@ -23,11 +22,9 @@ const Feed: React.FC<FeedProps> = ({ title, description, videoId, src }) => {
       onMouseLeave={() => handleHover(false)}
     >
       <ImgContainer src={src} />
-      {hovered && (
-        <PopupBackground>
-          <Youtube title={title} description={description} videoId={videoId} />
-        </PopupBackground>
-      )}
+      <PopupBackground className={hovered ? "show" : ""}>
+        <Youtube title={title} description={description} videoId={videoId} />
+      </PopupBackground>
     </FeedContainer>
   );
 };
@@ -65,4 +62,9 @@ const PopupBackground = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease; // 투명도 변화 애니메이션
+  &.show {
+    opacity: 1;
+  }
 `;
