@@ -297,7 +297,7 @@ Error generating stack: `+o.message+`
   color: #7e7e7e;
   display: flex;
   flex-direction: column;
-  background-color: #dcdcdc;
+  background-color: #ebebeb;
 `,IT=()=>{const[e,t]=X.useState(!1),n=(i,o,a)=>{o.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return Y.jsxs("div",{children:[Y.jsx(LP,{}),Y.jsx(Yg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:({})=>Y.jsxs(Yg.Wrapper,{children:[Y.jsx("div",{className:"section",children:Y.jsx(AP,{animate:e})}),Y.jsx("div",{className:"section",children:Y.jsx($P,{})}),Y.jsx("div",{className:"section",children:Y.jsx(RT,{})}),Y.jsx("div",{className:"section fp-auto-height",children:Y.jsx(AT,{})})]})})]})},zT=uP([{path:SP.root,element:Y.jsx(IT,{})}]);function FT(){return Y.jsx(Y.Fragment,{children:Y.jsx(yP,{router:zT})})}const $T={main:"#35a29f",sub:"#2b2b2b"},UT={maxWidth:768,sm:12,md:16,lg:20},HT={size:UT},BT={colors:$T},WT={...HT,...BT},VT=new KE({defaultOptions:{queries:{retry:1}}});var OS=function(e,t){return Object.defineProperty?Object.defineProperty(e,"raw",{value:t}):e.raw=t,e},CS=Fh(Oy||(Oy=OS([`
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
