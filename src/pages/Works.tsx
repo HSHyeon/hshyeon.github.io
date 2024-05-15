@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Feed from "./Feed";
+import Feed from "../components/Feed";
 import data from "../data.json";
 import { CiDesktopMouse1 } from "react-icons/ci";
 import styled from "styled-components";

@@ -1,9 +1,9 @@
 import ReactFullpage from "@fullpage/react-fullpage";
 import Header from "../components/Header";
-import Intro from "../components/Intro";
-import About from "../components/About";
-import Works from "../components/Works";
-import Contact from "../components/Contact";
+import Intro from "./Intro";
+import About from "./About";
+import Works from "./Works";
+import Contact from "./Contact";
 import { useState } from "react";
 
 interface Section {
