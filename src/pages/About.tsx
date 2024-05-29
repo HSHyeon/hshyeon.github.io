@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <AboutCatainer>
-        <ImgContainer src="profile.jpeg" />
+        <ImgContainer src="" />
         <SubContainer>
           <TitleContainer>
             다양한 경험을 통해 적응하는 개발자 홍소현입니다
