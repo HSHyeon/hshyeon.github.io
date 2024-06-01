@@ -7,8 +7,9 @@
 
 ## 3. Works : Slick를 이용해 작업한 내용을 담았다.
 처음에는 유튜브만 보여주었는데, 너무 대충같이 보여서 프로젝트별 썸네일 이미지를 만들어 hover하면 유튜브가 보이도록 만들었다. 그냥 있으면 hover 안해줄까봐 마우스 아이콘도 넣어줌..ㅎㅎ
-![image](https://github.com/HSHyeon/hshyeon.github.io/assets/60344240/f12c11f4-f00f-4359-ba7d-67d9aec3752d)
-![image](https://github.com/HSHyeon/hshyeon.github.io/assets/60344240/412f3e68-1b0b-4431-92f9-cd489c69d5e9)
+![image](https://github.com/HSHyeon/hshyeon.github.io/assets/60344240/92d0d296-203e-4b96-9c02-065472ac08d4)
+![Uploading image.png…]()
+
 
 추후 해당 프로젝트에 대한 설명도 추가해서 보여줄 예정!
 
