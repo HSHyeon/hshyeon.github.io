@@ -13,7 +13,7 @@ const About = () => {
           </TitleContainer>
           <TextContainer>
             <p>
-              프로젝트를 통해 꾸준히 성장해나가는{" "}
+              프로젝트를 통해 꾸준히 성장해나가는
               <PointText>주니어 개발자 홍소현</PointText>입니다.
             </p>
             <p>
@@ -23,8 +23,8 @@ const About = () => {
               더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,
             </p>
             <p>
-              <PointText>시각적으로도 매력적</PointText>이고{" "}
-              <PointText>기능적인 제품</PointText>을 만들며,{" "}
+              <PointText>시각적으로도 매력적</PointText>이고
+              <PointText>기능적인 제품</PointText>을 만들며,
             </p>
             <p>
               이를 통해<PointText> 사용자에게 가치 있는 경험</PointText>을 주는
@@ -100,7 +100,7 @@ const TitleContainer = styled.p`
   font-size: x-large;
 `;
 const ImgContainer = styled.img`
-  width: 28vw;
+  width: 20rem;
   filter: grayscale(20%);
   filter: brightness(120%);
   filter: blur(10000);
