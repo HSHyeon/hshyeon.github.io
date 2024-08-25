@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
       <AboutCatainer>
-        <ImgContainer src="profile.jpeg" />
+        <ImgContainer src="profile-img.jpg" />
         <SubContainer>
           <TitleContainer>
             다양한 경험을 통해 적응하는 개발자 홍소현입니다
@@ -70,7 +70,7 @@ const AboutCatainer = styled.div`
 
 const TextContainer = styled.div`
   line-height: 1.5em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
 const StackContainer = styled.div`
   line-height: 1.5em;
@@ -86,7 +86,7 @@ const SubContainer = styled.div`
   color: #ffffffbe;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 `;
 const PointText = styled.span`
   font-weight: 400;
