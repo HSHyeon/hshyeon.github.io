@@ -112,7 +112,7 @@ Error generating stack: `+o.message+`
   z-index: 100;
   width: 100vw;
 `,jC=Ge.img`
-  height: 22px;
+  height: 21px;
 `,DC=Ge.ul`
   list-style-type: none;
   display: flex;
@@ -123,7 +123,6 @@ Error generating stack: `+o.message+`
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 20px;
 `,Ta=Ge.a`
   color: ${({active:e})=>e?"white":"#ffffff74"};
   &:hover {
@@ -197,11 +196,11 @@ Error generating stack: `+o.message+`
   gap: 4rem;
   display: flex;
 `,UC=Ge.div`
-  line-height: 2em;
+  line-height: 1.5em;
   margin-bottom: 20px;
-  font-size: 1.2em;
+
 `,BC=Ge.div`
-  line-height: 2em;
+  line-height: 1.5em;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -214,15 +213,14 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   gap: 10px;
 `,mi=Ge.span`
-  font-weight: 500;
+  font-weight: 400;
   color: #ffffff;
 `,Zg=Ge.p`
   color: white;
   font-weight: 700;
-  font-size: 1.8em;
-  margin-bottom: 1rem;
+  font-size: x-large;
 `,VC=Ge.img`
-  width: 26rem;
+  width: 20rem;
   border-radius: 20px;
   filter: drop-shadow(6px 6px 9px #715987);
   animation: imganim 500ms ease-in forwards;
