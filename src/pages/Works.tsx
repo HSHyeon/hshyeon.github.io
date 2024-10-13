@@ -22,7 +22,13 @@ const Works = () => {
     <>
       <WorksContainer>
         <SliderContainer>
-          <CiDesktopMouse1 size={"30"} color="#ffffffc6" />
+          <Icon>
+            <CiDesktopMouse1
+              size={"30"}
+              color="#ffffffc6"
+              style={{ margin: "1.5rem" }}
+            />
+          </Icon>
           <Slider {...settings}>
             {data.map((item) => (
               <div key={item.id}>
@@ -44,6 +50,7 @@ const WorksContainer = styled.div`
   align-items: center;
   text-align: center;
   display: flex;
+  flex-direction: column;
 `;
 const SliderContainer = styled.div`
   width: 80vw;
@@ -57,8 +64,21 @@ const SliderContainer = styled.div`
 
     .slick-active {
       button::before {
-        color: #c1c1c1;
+        color: #ebebeb;
       }
+    }
+  }
+`;
+
+const Icon = styled.div`
+  animation: blink-animation 2s infinite;
+  @keyframes blink-animation {
+    0%,
+    100% {
+      opacity: 1; /* Fully visible */
+    }
+    50% {
+      opacity: 0.8; /* Half visible */
     }
   }
 `;

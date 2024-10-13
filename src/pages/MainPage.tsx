@@ -20,9 +20,7 @@ const MainPage = () => {
   const [animate, setAnimate] = useState(false);
 
   const handleAfterLoad = (
-    _origin: any,
     destination: Section,
-    _direction: any
   ) => {
     // 첫 번째 섹션이 로드될 때 애니메이션을 시작합니다.
     if (destination.index === 0) {
@@ -46,13 +44,13 @@ const MainPage = () => {
         credits={credits}
         afterLoad={handleAfterLoad}
         anchors={["Intro", "About", "Works"]}
-        render={({}) => (
+        render={() => (
           <ReactFullpage.Wrapper>
             <div className="section">
               <Intro animate={animate} />
             </div>
             <div className="section">
-              <About />
+              <About animate={animate} />
             </div>
             <div className="section">
               <Works />

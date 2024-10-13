@@ -36,7 +36,8 @@ const FeedContainer = styled.div`
   color: white;
   font-size: 20px;
   display: grid;
-  height: 70vh;
+  height: 100%;
+  padding: 3rem;
   box-sizing: border-box;
   gap: 20px;
   align-items: center;

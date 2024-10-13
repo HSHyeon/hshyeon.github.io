@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { RxGithubLogo } from "react-icons/rx";
 import { useEffect, useState } from "react";
+import { FaRegFilePdf } from "react-icons/fa6";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState<string>("#Intro");
@@ -34,12 +35,19 @@ const Header = () => {
             <NavLink href="#Works" active={activeLink === "#Works"}>
               Works
             </NavLink>
+
+            <NavLink
+              href="./sohyeon_portfolio.pdf"
+              className="download"
+              active={activeLink === "#Works"}
+              download
+            >
+              <FaRegFilePdf size={23} />
+            </NavLink>
           </NavMenuItem>
           <NavMenuItem>
             <NavLink href="https://github.com/HSHyeon">
-              <IconContainer>
-                <RxGithubLogo />
-              </IconContainer>
+              <RxGithubLogo size={24} />
             </NavLink>
           </NavMenuItem>
         </NavMenu>
@@ -63,20 +71,21 @@ const HeaderContainer = styled.header`
 `;
 
 const Logo = styled.img`
-  width: 50px;
   height: 21px;
 `;
 
 const NavMenu = styled.ul`
   list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-inline: 10px;
   margin: 0;
-  padding: 0;
 `;
 
 const NavMenuItem = styled.li`
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 `;
 
 interface NavLinkProps {
@@ -88,9 +97,21 @@ const NavLink = styled.a<NavLinkProps>`
   &:hover {
     color: white;
   }
-`;
-
-const IconContainer = styled.span`
-  font-size: 24px;
-  vertical-align: middle;
+  &.download {
+    color: ${({ active }) => (active ? "#fffcb2" : "#ffffff74")};
+    ${({ active }) =>
+      active &&
+      `
+      animation: blink-animation  1.5s infinite; /* Adjust duration for speed */
+    `}
+    @keyframes blink-animation {
+      0%,
+      100% {
+        opacity: 1; /* Fully visible */
+      }
+      50% {
+        opacity: 0.7; /* Half visible */
+      }
+    }
+  }
 `;
