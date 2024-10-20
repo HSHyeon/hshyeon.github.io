@@ -22,24 +22,23 @@ const Header = () => {
       <nav>
         <NavMenu>
           <NavMenuItem>
-            <NavLink href="#Intro" active={activeLink === "#Intro"}>
+            <NavLink href="#Intro" $active={activeLink === "#Intro"}>
               Intro
             </NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#About" active={activeLink === "#About"}>
+            <NavLink href="#About" $active={activeLink === "#About"}>
               About
             </NavLink>
           </NavMenuItem>
           <NavMenuItem>
-            <NavLink href="#Works" active={activeLink === "#Works"}>
+            <NavLink href="#Works" $active={activeLink === "#Works"}>
               Works
             </NavLink>
-
             <NavLink
               href="./sohyeon_portfolio.pdf"
               className="download"
-              active={activeLink === "#Works"}
+              $active={activeLink === "#Works"}
               download
             >
               <FaRegFilePdf size={23} />
@@ -89,18 +88,18 @@ const NavMenuItem = styled.li`
 `;
 
 interface NavLinkProps {
-  active?: boolean;
+  $active?: boolean;
 }
 
 const NavLink = styled.a<NavLinkProps>`
-  color: ${({ active }) => (active ? "white" : "#ffffff74")};
+  color: ${({ $active }) => ($active ? "white" : "#ffffff74")};
   &:hover {
     color: white;
   }
   &.download {
-    color: ${({ active }) => (active ? "#fffcb2" : "#ffffff74")};
-    ${({ active }) =>
-      active &&
+    color: ${({ $active }) => ($active ? "#fffcb2" : "#ffffff74")};
+    ${({ $active }) =>
+      $active &&
       `
       animation: blink-animation  1.5s infinite; /* Adjust duration for speed */
     `}

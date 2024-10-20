@@ -9,13 +9,31 @@ import styled from "styled-components";
 const Works = () => {
   const settings = {
     centerMode: true,
-    centerPadding: "60px",
+    centerPadding: "30px",
     dots: true,
     infinite: true,
     speed: 500,
-
     slidesToScroll: 1,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024, 
+      },
+      {
+        breakpoint: 768, // 768px 이상에서
+        settings: {
+          slidesToShow: 1, // 슬라이드 2개 보여줌
+          centerPadding: "10px", // 중앙 여백 조정
+        },
+      },
+      {
+        breakpoint: 480, // 480px 이상에서
+        settings: {
+          slidesToShow: 1, // 슬라이드 1개 보여줌
+          centerPadding: "0", // 중앙 여백 조정
+        },
+      },
+    ],
   };
 
   return (
@@ -46,12 +64,14 @@ export default Works;
 const WorksContainer = styled.div`
   background-color: #685c86;
   height: 100vh;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
 `;
+
 const SliderContainer = styled.div`
   width: 80vw;
   box-sizing: border-box;
@@ -72,13 +92,19 @@ const SliderContainer = styled.div`
 
 const Icon = styled.div`
   animation: blink-animation 2s infinite;
+
+  @media (max-width: 768px) {
+    font-size: 24px; // 모바일에서 아이콘 크기 조정
+    margin: 1rem; // 모바일에서 여백 조정
+  }
+
   @keyframes blink-animation {
     0%,
     100% {
-      opacity: 1; /* Fully visible */
+      opacity: 1; 
     }
     50% {
-      opacity: 0.8; /* Half visible */
+      opacity: 0.8; 
     }
   }
 `;

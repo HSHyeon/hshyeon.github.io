@@ -22,6 +22,7 @@ const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  overflow: hidden;
   color: #7e7e7e;
   display: flex;
   flex-direction: column;

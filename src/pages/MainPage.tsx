@@ -5,6 +5,7 @@ import About from "./About";
 import Works from "./Works";
 import Contact from "./Contact";
 import { useState } from "react";
+import styled from "styled-components";
 
 interface Section {
   index: number;
@@ -19,9 +20,7 @@ type Credits = {
 const MainPage = () => {
   const [animate, setAnimate] = useState(false);
 
-  const handleAfterLoad = (
-    destination: Section,
-  ) => {
+  const handleAfterLoad = (destination: Section) => {
     // 첫 번째 섹션이 로드될 때 애니메이션을 시작합니다.
     if (destination.index === 0) {
       setAnimate(true);
@@ -46,18 +45,18 @@ const MainPage = () => {
         anchors={["Intro", "About", "Works"]}
         render={() => (
           <ReactFullpage.Wrapper>
-            <div className="section">
+            <SectionContainer className="section">
               <Intro animate={animate} />
-            </div>
-            <div className="section">
+            </SectionContainer>
+            <SectionContainer className="section">
               <About animate={animate} />
-            </div>
-            <div className="section">
+            </SectionContainer>
+            <SectionContainer className="section">
               <Works />
-            </div>
-            <div className="section fp-auto-height">
+            </SectionContainer>
+            <SectionContainer className="section fp-auto-height">
               <Contact />
-            </div>
+            </SectionContainer>
           </ReactFullpage.Wrapper>
         )}
       />
@@ -66,3 +65,7 @@ const MainPage = () => {
 };
 
 export default MainPage;
+const SectionContainer = styled.div`
+  height: 100%;
+  width: 100%;
+`;

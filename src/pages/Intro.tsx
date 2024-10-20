@@ -16,11 +16,11 @@ const Intro = ({ animate }: IntroProps) => {
 };
 
 export default Intro;
-
 const IntroContainer = styled.div`
   background: linear-gradient(45deg, Violet, Orange);
   background-color: #2a1939;
   height: 100vh;
+  overflow: hidden;
 `;
 
 const TextContainer = styled.div`
@@ -37,6 +37,10 @@ const TextContainer = styled.div`
 
 const FrontEndDeveloper = styled.div`
   font-size: 3.2vw;
+
+  @media (max-width: 768px) {
+    font-size: 6vw; // 모바일에서의 폰트 크기 조정
+  }
 `;
 
 const MainText = styled.span`
@@ -55,6 +59,14 @@ const MainText = styled.span`
       width: 37.5vw;
     }
   }
+  @keyframes typing-mobile {
+    from {
+      width: 0;
+    }
+    to {
+      width: 66vw;
+    }
+  }
 
   @keyframes blink {
     50% {
@@ -67,5 +79,12 @@ const MainText = styled.span`
     animation:
       typing 1s steps(12, end) forwards,
       blink 1s step-end infinite;
+    @media (max-width: 768px) {
+      animation: typing-mobile 1s steps(10, end) forwards;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 8vw; // 모바일에서의 폰트 크기 조정
   }
 `;
