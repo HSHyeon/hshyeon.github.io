@@ -405,7 +405,7 @@ Error generating stack: `+o.message+`
   &.show {
     opacity: 1; // 애니메이션 효과를 주기 위해 opacity를 변경
   }
-`,RT=[{id:0,title:"AI 결과 리포트",src:"work.png",description:"현대엔지비 코딩테스트 평가 리포트 AI 분석 챗봇",videoId:"oQTVjPbla0w"},{id:1,title:"카페인바디",src:"works4.png",description:"졸업프로젝트, SW인재 페스티벌 경진대회 기업상",videoId:"VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR"},{id:2,title:"멍뭉",src:"works2.png",description:"맞춤형 강아지 용품 쇼핑몰",videoId:"E1d7rm-J-3I"},{id:3,title:"스페이스테이션",src:"works1.png",description:"당신이 만든 공간을 공유하세요",videoId:"hQIpURB7SEY"},{id:4,title:"FoF",src:"works3.png",description:"앱 런칭 동아리 MakeUs 프리메이커스 프로젝트 안드로이드 개발",videoId:"fFVip-_1OWc"}];function jT(e){return Vh({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{id:"Desktop_Mouse_1"},child:[{tag:"path",attr:{d:"M13.435,2.065h-2.87a6.5,6.5,0,0,0-6.5,6.5v6.87a6.5,6.5,0,0,0,6.5,6.5h2.87a6.5,6.5,0,0,0,6.5-6.5V8.565A6.5,6.5,0,0,0,13.435,2.065Zm-8.37,6.5a5.51,5.51,0,0,1,5.5-5.5h.94v6.44H5.065Zm13.87,6.87a5.5,5.5,0,0,1-5.5,5.5h-2.87a5.5,5.5,0,0,1-5.5-5.5v-4.93h13.87Zm0-5.93h-6.43V3.065h.93a5.5,5.5,0,0,1,5.5,5.5Z"},child:[]}]}]})(e)}const DT=()=>{const e={centerMode:!0,centerPadding:"30px",dots:!0,infinite:!0,speed:500,slidesToScroll:1,autoplay:!0,responsive:[{breakpoint:1024},{breakpoint:768,settings:{slidesToShow:1,centerPadding:"30px"}},{breakpoint:480,settings:{slidesToShow:1,centerPadding:"30px"}}]};return B.jsx(B.Fragment,{children:B.jsx(AT,{children:B.jsxs(NT,{children:[B.jsx(IT,{children:B.jsx(jT,{size:"30",color:"#ffffffc6",style:{margin:"1.5rem"}})}),B.jsx(Uk,{...e,children:RT.map(t=>B.jsx("div",{children:B.jsx(kT,{...t})},t.id))})]})})})},AT=We.div`
+`,RT=[{id:0,title:"AI 결과 리포트",src:"work.png",description:"현대엔지비 코딩테스트 평가 리포트 AI 분석 챗봇",videoId:"oQTVjPbla0w"},{id:1,title:"카페인바디",src:"works4.png",description:"졸업프로젝트, SW인재 페스티벌 경진대회 기업상",videoId:"VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR"},{id:2,title:"멍뭉",src:"works2.png",description:"맞춤형 강아지 용품 쇼핑몰",videoId:"E1d7rm-J-3I"},{id:3,title:"스페이스테이션",src:"works1.png",description:"당신이 만든 공간을 공유하세요",videoId:"hQIpURB7SEY"},{id:4,title:"FoF",src:"works3.png",description:"앱 런칭 동아리 MakeUs 프리메이커스 프로젝트 안드로이드 개발",videoId:"fFVip-_1OWc"}];function jT(e){return Vh({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{id:"Desktop_Mouse_1"},child:[{tag:"path",attr:{d:"M13.435,2.065h-2.87a6.5,6.5,0,0,0-6.5,6.5v6.87a6.5,6.5,0,0,0,6.5,6.5h2.87a6.5,6.5,0,0,0,6.5-6.5V8.565A6.5,6.5,0,0,0,13.435,2.065Zm-8.37,6.5a5.51,5.51,0,0,1,5.5-5.5h.94v6.44H5.065Zm13.87,6.87a5.5,5.5,0,0,1-5.5,5.5h-2.87a5.5,5.5,0,0,1-5.5-5.5v-4.93h13.87Zm0-5.93h-6.43V3.065h.93a5.5,5.5,0,0,1,5.5,5.5Z"},child:[]}]}]})(e)}const DT=()=>{const e={centerMode:!0,centerPadding:"30px",dots:!0,infinite:!0,speed:500,slidesToScroll:1,autoplay:!0,responsive:[{breakpoint:1024},{breakpoint:768,settings:{slidesToShow:1,centerPadding:"10px"}},{breakpoint:480,settings:{slidesToShow:1,centerPadding:"0"}}]};return B.jsx(B.Fragment,{children:B.jsx(AT,{children:B.jsxs(NT,{children:[B.jsx(IT,{children:B.jsx(jT,{size:"30",color:"#ffffffc6",style:{margin:"1.5rem"}})}),B.jsx(Uk,{...e,children:RT.map(t=>B.jsx("div",{children:B.jsx(kT,{...t})},t.id))})]})})})},AT=We.div`
   background-color: #685c86;
   height: 100vh;
   overflow: hidden;
@@ -419,10 +419,6 @@ Error generating stack: `+o.message+`
   box-sizing: border-box;
   margin: 0 auto;
   color: white;
-  @media (max-width: 768px) {
-    width: 90vw; 
-  }
-
   .slick-dots {
     button::before {
       color: #e9e9e9;
