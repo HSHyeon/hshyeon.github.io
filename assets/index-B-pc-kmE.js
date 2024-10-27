@@ -295,7 +295,7 @@ Error generating stack: `+o.message+`
   &.animate {
     transform: translateX(-6rem);
     opacity: 0;
-    animation: imganim 500ms ease-in-out forwards;
+    animation: imganim 1s ease-in-out forwards;
   }
 
   @keyframes imganim {
