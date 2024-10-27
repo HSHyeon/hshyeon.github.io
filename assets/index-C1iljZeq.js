@@ -293,12 +293,14 @@ Error generating stack: `+o.message+`
   border-radius: 20px;
   filter: drop-shadow(6px 6px 9px #715987);
   &.animate {
+    transform: translateX(-6rem);
+    opacity: 0;
     animation: imganim 500ms ease-in-out forwards;
   }
 
   @keyframes imganim {
     from {
-      transform: translateX(-6rem);
+      transform: translateX(-8rem);
       opacity: 0;
     }
     to {
