@@ -291,8 +291,6 @@ Error generating stack: `+o.message+`
 `,qC=We.img`
   width: 22rem;
   border-radius: 20px;
-  transform: translateX(-6rem);
-  opacity: 0;
   filter: drop-shadow(6px 6px 9px #715987);
   &.animate {
     animation: imganim 500ms ease-in-out forwards;
