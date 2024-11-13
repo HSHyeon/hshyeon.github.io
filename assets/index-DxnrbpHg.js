@@ -143,11 +143,11 @@ Error generating stack: `+o.message+`
       }
     }
   }
-`,zP=({animate:e})=>U.jsxs(FP,{children:[U.jsx(ey,{animate:e,side:"left"}),U.jsx(ey,{animate:e,side:"right"}),U.jsxs($P,{children:[U.jsx(UP,{children:"FRONTEND DEVELOPER"}),U.jsx(HP,{className:e?"animate":"",children:"SOHYEON HONG"})]})]}),FP=Ne.div`
+`,zP=({animate:e})=>U.jsxs(FP,{children:[U.jsx(ey,{side:"left"}),U.jsx(ey,{side:"right"}),U.jsxs($P,{children:[U.jsx(UP,{children:"FRONTEND DEVELOPER"}),U.jsx(HP,{className:e?"animate":"",children:"SOHYEON HONG"})]})]}),FP=Ne.div`
   background: linear-gradient(45deg, Violet, Orange);
   height: 100vh;
   overflow: hidden;
-  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +159,7 @@ Error generating stack: `+o.message+`
   filter: blur(1rem); /* 흐림 효과 */
 
   /* 애니메이션 적용 */
-  animation: ${({animate:e})=>e?"grow 10s ease-in-out infinite":"none"};
+  animation: grow 10s ease-in-out infinite;
 
   /* 왼쪽과 오른쪽에 배치하는 스타일 */
   ${({side:e})=>e==="left"?`
@@ -187,7 +187,6 @@ Error generating stack: `+o.message+`
     100% {
       transform: scale(1) rotate(60deg); /* 원래 크기로 돌아오며 60도 회전 */
       opacity: 0.2;
-     
     }
   }
 `,$P=Ne.div`
@@ -206,10 +205,11 @@ Error generating stack: `+o.message+`
   font-weight: 600;
   border-right: 0.15em solid orange;
   overflow: hidden;
+  display: block;
   white-space: nowrap;
   text-align: left;
 
-  @keyframes typing {
+  @keyframes type {
     from {
       width: 0;
     }
@@ -219,10 +219,10 @@ Error generating stack: `+o.message+`
   }
 
   @keyframes typing-mobile {
-    from {
+    0% {
       width: 0;
     }
-    to {
+    100% {
       width: 66vw;
     }
   }
@@ -236,11 +236,13 @@ Error generating stack: `+o.message+`
   &.animate {
     animation: none;
     animation:
-      typing 1s steps(12, end) forwards,
+      type 1s steps(12, end) forwards,
       blink 1s step-end infinite;
 
     @media (max-width: 768px) {
-      animation: typing-mobile 1s steps(10, end) forwards;
+      animation:
+        typing-mobile 1s steps(10, end) forwards,
+        blink 1s step-end infinite;
     }
   }
 
