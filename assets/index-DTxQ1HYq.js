@@ -148,7 +148,6 @@ Error generating stack: `+o.message+`
   background: linear-gradient(45deg, Violet, Orange);
   height: 100%;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +193,10 @@ Error generating stack: `+o.message+`
   color: white;
   position: relative;
   text-align: center;
-  z-index: 1; /* 텍스트가 원보다 위에 오도록 설정 */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
 `,UP=Ne.div`
   font-size: 3.2vw;
 
@@ -206,28 +208,25 @@ Error generating stack: `+o.message+`
   font-weight: 600;
   border-right: 0.15em solid orange;
   overflow: hidden;
-  display: block;
+  width: 98%;
   white-space: nowrap;
-  text-align: left;
-
   @keyframes type {
     from {
       width: 0;
     }
     to {
-      width: 37.5vw;
+      width: 98%;
     }
   }
 
   @keyframes typing-mobile {
-    0% {
+    from {
       width: 0;
     }
-    100% {
-      width: 66vw;
+    to {
+      width: 95%;
     }
   }
-
   @keyframes blink {
     50% {
       border-color: transparent;
@@ -242,13 +241,14 @@ Error generating stack: `+o.message+`
 
     @media (max-width: 768px) {
       animation:
-        typing-mobile 1s steps(10, end) forwards,
+        typing-mobile 1s steps(12, end) forwards,
         blink 1s step-end infinite;
     }
   }
 
   @media (max-width: 768px) {
     font-size: 8vw; // 모바일에서의 폰트 크기 조정
+    width: 95%;
   }
 `,BP=({animate:e})=>U.jsx(U.Fragment,{children:U.jsxs(WP,{children:[U.jsx(YP,{className:e?"animate":"",src:"profile-img.jpg"}),U.jsxs(qP,{children:[U.jsx(ty,{children:"다양한 경험을 통해 적응하는 개발자"}),U.jsxs(VP,{children:[U.jsxs("p",{children:["프로젝트를 통해 꾸준히 성장해나가는",U.jsx(Ss,{children:" 주니어 개발자 홍소현"}),"입니다"]}),U.jsx("p",{children:"소프트웨어 개발 분야에서 지속적인 학습과 개선에 힘쓰고 있습니다"}),U.jsx("p",{children:"더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,"}),U.jsxs("p",{children:[U.jsx(Ss,{children:"시각적으로도 매력적"}),"이고",U.jsx(Ss,{children:" 기능적인 제품"}),"을 만들며,"]}),U.jsxs("p",{children:["이를 통해",U.jsx(Ss,{children:" 사용자에게 가치 있는 경험"}),"을 주는 것이 목표입니다"]})]}),U.jsx(ty,{children:"🌟 Skill&Tools"}),U.jsxs(QP,{children:[U.jsx(Zf,{children:"FRONTEND"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/React-1572B6?style=flat-square&logo=React&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Vue-4fc08d?style=flat&logo=vuedotjs&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/TypeScript-8A2BE2?style=flat-square&logo=typescript&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"})]}),U.jsx(Zf,{children:"DESIGN"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/Figma-0C8CE9?style=flat-square&logo=figma&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat-square&logo=adobe%20illustrator&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat-square&logo=adobe%20photoshop&logoColor=white"})]}),U.jsx(Zf,{children:"TOOLS"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=notion&logoColor=black"})]})]})]})]})}),WP=Ne.div`
   background-color: #786d95;
@@ -295,7 +295,7 @@ Error generating stack: `+o.message+`
 `,Xf=Ne.div`
   display: flex;
   gap: 4px;
-
+  flex-wrap: wrap;
   @media (max-width: 768px) {
     gap: 3px;
     justify-content: center;
@@ -663,5 +663,15 @@ table {
   a{
     text-decoration: none;
     color: #000;
+  }
+  @media (max-width: 1200px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 576px) {
+    body {
+      font-size: 12px;
+    }
   }
 `;ud.createRoot(document.getElementById("root")).render(U.jsx(Ke.StrictMode,{children:U.jsx(rO,{client:JT,children:U.jsxs(nC,{theme:ZT,children:[U.jsx(eL,{}),U.jsx(WT,{})]})})}));
