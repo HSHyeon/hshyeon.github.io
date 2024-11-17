@@ -125,9 +125,10 @@ Error generating stack: `+o.message+`
   gap: 12px;
 `,ka=Ne.a`
   color: ${({$active:e})=>e?"white":"#ffffff74"};
+  transition: color 0.1s ease-out;
   &:hover {
     color: white;
-  }
+ }
   &.download {
     color: ${({$active:e})=>e?"#fffcb2":"#ffffff74"};
     ${({$active:e})=>e&&`
@@ -145,7 +146,7 @@ Error generating stack: `+o.message+`
   }
 `,zP=({animate:e})=>U.jsxs(FP,{children:[U.jsx(ey,{side:"left"}),U.jsx(ey,{side:"right"}),U.jsxs($P,{children:[U.jsx(UP,{children:"FRONTEND DEVELOPER"}),U.jsx(HP,{className:e?"animate":"",children:"SOHYEON HONG"})]})]}),FP=Ne.div`
   background: linear-gradient(45deg, Violet, Orange);
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 
   display: flex;
@@ -251,7 +252,7 @@ Error generating stack: `+o.message+`
   }
 `,BP=({animate:e})=>U.jsx(U.Fragment,{children:U.jsxs(WP,{children:[U.jsx(YP,{className:e?"animate":"",src:"profile-img.jpg"}),U.jsxs(qP,{children:[U.jsx(ty,{children:"다양한 경험을 통해 적응하는 개발자"}),U.jsxs(VP,{children:[U.jsxs("p",{children:["프로젝트를 통해 꾸준히 성장해나가는",U.jsx(Ss,{children:" 주니어 개발자 홍소현"}),"입니다"]}),U.jsx("p",{children:"소프트웨어 개발 분야에서 지속적인 학습과 개선에 힘쓰고 있습니다"}),U.jsx("p",{children:"더불어 디자인적 감각을 활용하여 기술적인 측면에서 뿐만 아니라,"}),U.jsxs("p",{children:[U.jsx(Ss,{children:"시각적으로도 매력적"}),"이고",U.jsx(Ss,{children:" 기능적인 제품"}),"을 만들며,"]}),U.jsxs("p",{children:["이를 통해",U.jsx(Ss,{children:" 사용자에게 가치 있는 경험"}),"을 주는 것이 목표입니다"]})]}),U.jsx(ty,{children:"🌟 Skill&Tools"}),U.jsxs(QP,{children:[U.jsx(Zf,{children:"FRONTEND"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/React-1572B6?style=flat-square&logo=React&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Vue-4fc08d?style=flat&logo=vuedotjs&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/TypeScript-8A2BE2?style=flat-square&logo=typescript&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"})]}),U.jsx(Zf,{children:"DESIGN"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/Figma-0C8CE9?style=flat-square&logo=figma&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat-square&logo=adobe%20illustrator&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat-square&logo=adobe%20photoshop&logoColor=white"})]}),U.jsx(Zf,{children:"TOOLS"}),U.jsxs(Xf,{children:[U.jsx("img",{src:"https://img.shields.io/badge/Github-181717?style=flat-square&logo=github&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"}),U.jsx("img",{src:"https://img.shields.io/badge/Notion-FFFFFF?style=flat-square&logo=notion&logoColor=black"})]})]})]})]})}),WP=Ne.div`
   background-color: #786d95;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -448,7 +449,7 @@ Error generating stack: `+o.message+`
   }
 `,jT=[{id:0,title:"AI 결과 리포트 데모 영상",src:"work.png",description:"현대엔지비 코딩테스트 평가 리포트 AI 분석 챗봇",videoId:"oQTVjPbla0w"},{id:1,title:"카페인바디",src:"works4.png",description:"졸업프로젝트, SW인재 페스티벌 경진대회 기업상",videoId:"VRWtdtGjWVQ?si=OEtxwyd4MMz9LPSR"},{id:2,title:"멍뭉",src:"works2.png",description:"맞춤형 강아지 용품 쇼핑몰",videoId:"E1d7rm-J-3I"},{id:3,title:"스페이스테이션",src:"works1.png",description:"당신이 만든 공간을 공유하세요",videoId:"hQIpURB7SEY"},{id:4,title:"FoF",src:"works3.png",description:"앱 런칭 동아리 MakeUs 프리메이커스 프로젝트 안드로이드 개발",videoId:"fFVip-_1OWc"}];function DT(e){return Vh({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{id:"Desktop_Mouse_1"},child:[{tag:"path",attr:{d:"M13.435,2.065h-2.87a6.5,6.5,0,0,0-6.5,6.5v6.87a6.5,6.5,0,0,0,6.5,6.5h2.87a6.5,6.5,0,0,0,6.5-6.5V8.565A6.5,6.5,0,0,0,13.435,2.065Zm-8.37,6.5a5.51,5.51,0,0,1,5.5-5.5h.94v6.44H5.065Zm13.87,6.87a5.5,5.5,0,0,1-5.5,5.5h-2.87a5.5,5.5,0,0,1-5.5-5.5v-4.93h13.87Zm0-5.93h-6.43V3.065h.93a5.5,5.5,0,0,1,5.5,5.5Z"},child:[]}]}]})(e)}const AT=()=>{const e={centerMode:!0,centerPadding:"30px",dots:!0,infinite:!0,speed:500,slidesToScroll:1,autoplay:!0,responsive:[{breakpoint:1024},{breakpoint:768,settings:{slidesToShow:1,centerPadding:"10px"}},{breakpoint:480,settings:{slidesToShow:1,centerPadding:"0"}}]};return U.jsx(U.Fragment,{children:U.jsx(NT,{children:U.jsxs(IT,{children:[U.jsx(zT,{children:U.jsx(DT,{size:"30",color:"#ffffffc6",style:{margin:"1.5rem"}})}),U.jsx(Hk,{...e,children:jT.map(t=>U.jsx("div",{children:U.jsx(TT,{...t})},t.id))})]})})})},NT=Ne.div`
   background-color: #685c86;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -507,13 +508,16 @@ Error generating stack: `+o.message+`
   a {
     color: #6a1fc0;
   }
-`,HT=()=>{const[e,t]=G.useState(!1),n=i=>{i.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return U.jsxs("div",{children:[U.jsx(DP,{}),U.jsx(Xg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works"],render:()=>U.jsxs(Xg.Wrapper,{children:[U.jsx(Es,{className:"section",children:U.jsx(zP,{animate:e})}),U.jsx(Es,{className:"section",children:U.jsx(BP,{animate:e})}),U.jsx(Es,{className:"section",children:U.jsx(AT,{})}),U.jsx(Es,{className:"section fp-auto-height",children:U.jsx(FT,{})})]})})]})},Es=Ne.div`
+`,HT=()=>{const[e,t]=G.useState(!1),n=i=>{i.index===0?t(!0):t(!1)},r={enabled:!0,label:"",position:"right"};return U.jsxs("div",{children:[U.jsx(DP,{}),U.jsx(Xg,{licenseKey:"KNXF6-QO9NI-YH0AI-7I377-OOOYM",credits:r,afterLoad:n,anchors:["Intro","About","Works",""],render:()=>U.jsxs(Xg.Wrapper,{children:[U.jsx(Es,{className:"section",children:U.jsx(zP,{animate:e})}),U.jsx(Es,{className:"section",children:U.jsx(BP,{animate:e})}),U.jsx(Es,{className:"section",children:U.jsx(AT,{})}),U.jsx(Es,{className:"section fp-auto-height",children:U.jsx(FT,{})})]})})]})},Es=Ne.div`
   height: 100%;
   width: 100%;
+  .fp-overflow{
+    height: 100%;
+  }
 `,BT=dP([{path:EP.root,element:U.jsx(HT,{})}]);function WT(){const[e,t]=G.useState({x:0,y:0}),[n,r]=G.useState({x:0,y:0}),i=l=>{r({x:l.clientX,y:l.clientY})},o=G.useRef(null),a=G.useRef(0);return G.useEffect(()=>{const l=u=>{t({x:u.clientX,y:u.clientY})};return document.addEventListener("mousemove",l),()=>{document.removeEventListener("mousemove",l)}},[]),G.useEffect(()=>{const l=()=>{if(o.current){const{x:u,y:f}=e,d=o.current,p=parseFloat(d.style.left||"0"),h=parseFloat(d.style.top||"0"),S=u-p,E=f-h,x=.1;d.style.left=`${p+S*x}px`,d.style.top=`${h+E*x}px`}a.current=requestAnimationFrame(l)};return a.current=requestAnimationFrame(l),()=>{cancelAnimationFrame(a.current)}},[e]),U.jsxs(VT,{onMouseMove:i,children:[U.jsxs("div",{className:"cursor-area",children:[U.jsx(xP,{router:BT}),U.jsx(QT,{ref:o})]}),U.jsx(qT,{style:{left:`${n.x}px`,top:`${n.y}px`}})]})}const VT=Ne.div`
   .cursor-area {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
